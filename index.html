@@ -8,6 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
+<style>
+    form {
+        margin: 0 auto;
+        width:50%;
+    }
+        /*text-align: center;*/
+
+</style>
 <body>
 
 <div class="container-fluid">
@@ -18,8 +26,12 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam autem, corporis culpa delectus eaque excepturi exercitationem facere fuga id mollitia nam nobis nulla quaerat recusandae repudiandae saepe soluta voluptates?</p>
 
             <form action="/mailing-list">
-                <input type="email" name="email" placeholder="myname@example.com">
-                <button type="submit">Keep me informed!</button>
+                <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="email" name="email" placeholder="myname@example.com">
+                </div>
+                <p>I assure you we don't send spam</p>
+                <button class="btn btn-success btn-lg" type="submit">Keep me informed!</button>
             </form>
         </div>
     </div>
