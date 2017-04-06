@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita|Open+Sans:700,400">
     <link href='https://fonts.googleapis.com/css?family=Allan:bold' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
@@ -46,6 +47,18 @@
     .row {
         margin-top:100px;
     }
+
+    .fa {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    input{
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+    }
+
 
 </style>
 <body data-spy="scroll" data-target="#navbar-exemple">
@@ -104,7 +117,7 @@
 
                     <form action="#">
                         <div class="input-group">
-                            <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                            <span class="fa fa-envelope"></span>
                             <input type="email" name="email" placeholder="myname@example.com">
                         </div>
                         <p>I assure you we don't send spam</p>
